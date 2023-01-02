@@ -17,8 +17,25 @@ KnightStable is a chess website where users can look at previous games, openings
 
 - ### Play against other players
   - And climb the rating ladder
-  
 
+# Images
+  - ### Homepage
+  <img width="950" alt="Screenshot_20221227_110428" src="https://user-images.githubusercontent.com/117121187/210263823-88472bee-b7c0-4617-9049-56307a9ca934.png">
+  
+  <img width="953" alt="Screenshot_20221227_110458" src="https://user-images.githubusercontent.com/117121187/210263866-35831c41-737b-44d2-8a2a-216740a6960d.png">
+  - ### Search Page
+    <img width="950" alt="Screenshot_20221227_110524" src="https://user-images.githubusercontent.com/117121187/210263902-58abbad6-f71f-42d1-98de-7ea3dd20e705.png">
+  
+  - ### Opening Search Page
+    <img width="1008" alt="Screenshot_20221227_110537" src="https://user-images.githubusercontent.com/117121187/210263930-ab733cfc-5cf5-4709-bd84-c73b7e155a51.png">
+  
+  - ### Play page
+    <img width="995" alt="Screenshot_20221227_110654" src="https://user-images.githubusercontent.com/117121187/210263952-cd03ca2d-4c91-4124-a79a-b5fc035dde5e.png">
+  
+  - ### Game page
+    <img width="951" alt="Screenshot_20221227_110728" src="https://user-images.githubusercontent.com/117121187/210263981-8aab3ea9-f391-4a32-aeca-0e4499f12f1a.png">
+  
+  - ### **Many more pages that cannot be displayed to keep this concise, will be showcased in the video link above
 # Languages/tools used
 - ### Backend
   - Python
