@@ -1,7 +1,8 @@
 ![banner](https://user-images.githubusercontent.com/117121187/210261879-313142b4-728e-4ef2-916d-abfac24c4047.jpg)
 
-KnightStable is a chess website where users can look at previous games, openings, recent news as well as play against others
-
+#### KnightStable is a chess website where users can look at previous games, openings, recent news as well as play against others
+<br>
+<br>
 
 ![ks](https://user-images.githubusercontent.com/117121187/210262413-05c97721-5fc1-48c8-866b-4b9651ebc9e1.gif)
 
