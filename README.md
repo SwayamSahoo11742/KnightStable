@@ -23,6 +23,7 @@ KnightStable is a chess website where users can look at previous games, openings
   <img width="950" alt="Screenshot_20221227_110428" src="https://user-images.githubusercontent.com/117121187/210263823-88472bee-b7c0-4617-9049-56307a9ca934.png">
   
   <img width="953" alt="Screenshot_20221227_110458" src="https://user-images.githubusercontent.com/117121187/210263866-35831c41-737b-44d2-8a2a-216740a6960d.png">
+  
   - ### Search Page
     <img width="950" alt="Screenshot_20221227_110524" src="https://user-images.githubusercontent.com/117121187/210263902-58abbad6-f71f-42d1-98de-7ea3dd20e705.png">
   
