@@ -68,7 +68,7 @@ KnightStable is a chess website where users can look at previous games, openings
 
 - This app is using **Ngrok** to run a tunneled version of it so people that I do want to see can see it
 
-- The production version repository of this project is at this [link](https://github.com/SwayamSahoo11742/KnightStable) 
+- The production version repository of this project is at this [link](https://github.com/SwayamSahoo11742/KnightStable-product) 
 
 # Developer
 Swayam Sahoo
