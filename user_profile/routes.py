@@ -56,7 +56,7 @@ def account():
             # Get pfp file
             pfp = request.files.get("pfp")
             # Save it
-            pfp_file = save_pfp(pfp, users)
+            pfp_file = save_pfp(pfp, profiling)
             # Update db
             cursor.execute(
                 "UPDATE users SET pfp = ? WHERE id = ?", (pfp_file, session["user_id"])
