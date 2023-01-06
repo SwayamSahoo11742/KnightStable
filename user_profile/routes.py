@@ -3,8 +3,7 @@ import sqlite3
 from flask import flash, redirect, render_template, request, session
 from werkzeug.security import check_password_hash, generate_password_hash
 from knightstable.user_profile.helpers import save_pfp, get_uscf_rating
-
-db = "games.db"
+from knightstable import db,app
 profiling = Blueprint("profiling", __name__)
 
 
@@ -56,7 +55,7 @@ def account():
             # Get pfp file
             pfp = request.files.get("pfp")
             # Save it
-            pfp_file = save_pfp(pfp, profiling)
+            pfp_file = save_pfp(pfp, app)
             # Update db
             cursor.execute(
                 "UPDATE users SET pfp = ? WHERE id = ?", (pfp_file, session["user_id"])

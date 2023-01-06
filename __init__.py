@@ -10,7 +10,7 @@ app = Flask(__name__)
 # App Config
 app.config.from_object(Config)
 Session(app)
-
+db = "C:/Users/Dodo/Desktop/Projects/games.db"
 
 # Adding custom functions
 app.jinja_env.globals.update(strip_eval=strip_eval)
@@ -35,8 +35,7 @@ app.register_blueprint(chess)
 
 run_with_ngrok(app)
 
-# Connecting to database
-db = "C:/Users/Dodo/Desktop/Projects/games.db"
+
 
 # Running
 

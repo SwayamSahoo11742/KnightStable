@@ -16,7 +16,7 @@ def save_pfp(pfp, app):
     filename = hex + f_ext
 
     # Make path
-    path = os.path.join(app.root_path, "knightstable\static\img\pfp", filename)
+    path = os.path.join(app.root_path, "static\img\pfp", filename)
 
     # Deciding output size
     output_size = (221, 228)
@@ -28,7 +28,7 @@ def save_pfp(pfp, app):
 
     # Saving resized image into path
     i.save(path)
-
+    return filename
 
 def get_uscf_rating(id):
     # Getting response form url

@@ -2,7 +2,7 @@ from flask import Blueprint
 import sqlite3
 from flask import render_template, request
 
-db = "games.db"
+from knightstable import db
 searches = Blueprint("searches", __name__)
 
 # Search Page
