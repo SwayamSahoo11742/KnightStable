@@ -35,11 +35,11 @@
 
                 <!--brand-->
 
-                <a class="nav-link brand ms-5" href="/"><img class="nav-logo" src="{{url_for('static', filename='img/logo.png')}}"></a>
+                <a class="nav-link brand ms-5" href="/"><img class="nav-logo" src="/static/img/navLogo.png"></a>
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <!-- Home -->
                     <li class="nav-item">
-                        <a href="/" class="nav-link ms-5">Home</a>
+                        <a href="/home" class="nav-link ms-5">Home</a>
                     </li>
                     <!-- Search-->
                     <li class="nav-item">
@@ -121,7 +121,7 @@
                 <li>
                 <!-- About-->
                 <li class="nav-item">
-                    <a class="nav-link" href="/about">About</a>
+                    <a class="nav-link" href="/">About</a>
                 </li>
                 <!-- Recommended-->
                 <li class="nav-item">
@@ -157,10 +157,6 @@
     </div>
     </div>
     </div>
-
-        <!-- main js  -->
-        <script src="/static/js/main.js"></script>
-
         <!-- Links Block -->
         {%block links%} {%endblock%}
     </body>
