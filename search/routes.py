@@ -108,11 +108,11 @@ def openings():
         # checking if If Color is not "Any" ( This needs to be checked because db does not have a value "Any" for color)
         if color != "Any":
             # Create a query with color as a value in data tuple
-            query = "SELECT * FROM opening WHERE color LIKE ? AND name LIKE ? AND moves LIKE ?"
+            query = "SELECT * FROM opening WHERE color LIKE ? AND name LIKE ? AND moves LIKE ? LIMIT 50"
             data_tuple = (color, "%" + name + "%", "%" + moves + "%")
         else:
             # Creating a query with color not as it's value in the data tuple
-            query = "SELECT * FROM opening WHERE name LIKE ? AND moves LIKE ?"
+            query = "SELECT * FROM opening WHERE name LIKE ? AND moves LIKE ? LIMIT 50"
             data_tuple = ("%" + name + "%", "%" + moves + "%")
 
         # Getting openings that match query
