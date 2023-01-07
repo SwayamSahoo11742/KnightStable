@@ -1,6 +1,12 @@
 ![banner](https://user-images.githubusercontent.com/117121187/210261879-313142b4-728e-4ef2-916d-abfac24c4047.jpg)
+![GitHub repo size](https://img.shields.io/github/repo-size/SwayamSahoo11742/KnightStable) ![GitHub last commit](https://img.shields.io/github/last-commit/SwayamSahoo11742/KnightStable)
 
-#### KnightStable is a chess website where users can look at previous games, openings, recent news as well as play against others
+KnightStable is a chess website where users can look at previous games, openings, recent news as well as play against others
+
+
+Link: https://b23a-108-7-187-149.ngrok.io 
+
+**note: This site's url changes every ~24-48. For more info, check the Notes section**
 <br>
 <br>
 
@@ -37,7 +43,7 @@
   - ### Game page
     <img width="951" alt="Screenshot_20221227_110728" src="https://user-images.githubusercontent.com/117121187/210263981-8aab3ea9-f391-4a32-aeca-0e4499f12f1a.png">
   
-  - ### **Many more pages that cannot be displayed to keep this concise, will be showcased in the video link above
+  - ### **Many more pages that cannot be displayed to keep this concise, can be viewed in the link above
 # Languages/tools used
 - ### Backend
   - Python
@@ -65,12 +71,20 @@
     - Bootstrap5
     - Jinja2
 
-# Notes
-- Due to the lack of visits, from both me and others, the product is not publicly accessible as it is not worth the cost to keep it running. Instead, a demo video of this project will be released at the top of the README file at a later date
 
-- This app is using **Ngrok** to run a tunneled version of it so people that I do want to see can see it
+# Notes
+- Due to the lack of visits, from both me and others, the product is not publicly accessible as it is not worth the cost to keep it running. Instead, the development version of this is ran on my local system since teh traffic will not be high.
+
+- This app is using **Ngrok** to run and forward an SSH tunnel to my localhost. 
+
+- The url is different every day or so because ngrok's free plan does not allow for a domain name. That being said, because there is no limit on the session duration, I will try to keep it on as much as possible but it will have to restart with a new url every other day or so. 
 
 - The production version repository of this project is at this [link](https://github.com/SwayamSahoo11742/KnightStable-product) 
+
+<br>
+
+# Test Contributors
+Jake Pisanwarakul
 
 # Developer
 Swayam Sahoo
