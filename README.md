@@ -73,7 +73,7 @@ Link: https://b23a-108-7-187-149.ngrok.io
 
 
 # Notes
-- Due to the lack of visits, from both me and others, the product is not publicly accessible as it is not worth the cost to keep it running. Instead, the development version of this is ran on my local system since teh traffic will not be high.
+- Due to the lack of visits, from both me and others, the product is not publicly accessible as it is not worth the cost to keep it running. Instead, the development version of this is ran on my local system since the traffic will not be high.
 
 - This app is using **Ngrok** to run and forward an SSH tunnel to my localhost. 
 
