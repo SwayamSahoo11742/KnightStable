@@ -1,5 +1,5 @@
 ![banner](https://user-images.githubusercontent.com/117121187/210261879-313142b4-728e-4ef2-916d-abfac24c4047.jpg)
-![Lines of code](https://img.shields.io/tokei/lines/github/SwayamSahoo11742/KnightStable) ![GitHub top language](https://img.shields.io/github/languages/top/SwayamSahoo11742/KnightStable) ![GitHub language count](https://img.shields.io/github/languages/count/SwayamSahoo11742/KnightStable)
+![GitHub repo size](https://img.shields.io/github/repo-size/SwayamSahoo11742/KnightStable) ![GitHub last commit](https://img.shields.io/github/last-commit/SwayamSahoo11742/KnightStable)
 
 KnightStable is a chess website where users can look at previous games, openings, recent news as well as play against others
 
