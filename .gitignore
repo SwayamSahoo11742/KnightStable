@@ -1,4 +1,4 @@
 games.db
 /flask_session
 __pycache__/
-node_module/
+node_modules/
