@@ -140,7 +140,8 @@ def game_over(gameinfo):
 @chess.route("/play/<id>")
 def game(id):
     # Seems empty, because matchmaking and settings handling is done at "/play", where they select the settinsg they want and matchmade there as well
-
+    if "logged" not in session:
+        return redirect("/")
     # Connect to db
     users = sqlite3.connect(db)
     cursor = users.cursor()
@@ -168,6 +169,8 @@ def game(id):
 # Page where the settings and matchmaking is handled
 @chess.route("/play", methods=["POST", "GET"])
 def play():
+    if "logged" not in session:
+        return redirect("/")
     # If GET request, render template
     if request.method == "GET":
         return render_template("play.html")

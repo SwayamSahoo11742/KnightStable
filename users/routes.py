@@ -3,7 +3,7 @@ import sqlite3
 from flask import flash, redirect, render_template, request, session
 from werkzeug.security import check_password_hash, generate_password_hash
 from knightstable.users.helpers import get_tournaments, get_uscf_rating
-
+from knightstable import db
 
 users = Blueprint("users", __name__)
 
