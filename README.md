@@ -4,7 +4,7 @@
 KnightStable is a chess website where users can look at previous games, openings, recent news as well as play against others
 
 
-Link: https://b23a-108-7-187-149.ngrok.io 
+Link: https://f382-108-7-187-149.ngrok.io     
 
 **note: This site's url changes every ~24-48. For more info, check the Notes section**
 <br>
@@ -35,10 +35,10 @@ Link: https://b23a-108-7-187-149.ngrok.io
     <img width="950" alt="Screenshot_20221227_110524" src="https://user-images.githubusercontent.com/117121187/210263902-58abbad6-f71f-42d1-98de-7ea3dd20e705.png">
   
   - ### Opening Search Page
-    <img width="1008" alt="Screenshot_20221227_110537" src="https://user-images.githubusercontent.com/117121187/210263930-ab733cfc-5cf5-4709-bd84-c73b7e155a51.png">
+    <img width="949" alt="image" src="https://user-images.githubusercontent.com/117121187/211160731-4f03652b-e1be-4be9-a6a7-0411768ec9bf.png">
   
   - ### Play page
-    <img width="995" alt="Screenshot_20221227_110654" src="https://user-images.githubusercontent.com/117121187/210263952-cd03ca2d-4c91-4124-a79a-b5fc035dde5e.png">
+    <img width="949" alt="image" src="https://user-images.githubusercontent.com/117121187/211160887-a6f8aef2-7533-4a45-8bbc-919bbb07f950.png">
   
   - ### Game page
     <img width="951" alt="Screenshot_20221227_110728" src="https://user-images.githubusercontent.com/117121187/210263981-8aab3ea9-f391-4a32-aeca-0e4499f12f1a.png">
@@ -73,7 +73,7 @@ Link: https://b23a-108-7-187-149.ngrok.io
 
 
 # Notes
-- Due to the lack of visits, from both me and others, the product is not publicly accessible as it is not worth the cost to keep it running. Instead, the development version of this is ran on my local system since teh traffic will not be high.
+- Due to the lack of visits, from both me and others, the product is not publicly accessible as it is not worth the cost to keep it running. Instead, the development version of this is ran on my local system since the traffic will not be high.
 
 - This app is using **Ngrok** to run and forward an SSH tunnel to my localhost. 
 
