@@ -11,7 +11,8 @@ Link: https://f382-108-7-187-149.ngrok.io
 <br>
 
 ![ks](https://user-images.githubusercontent.com/117121187/210262413-05c97721-5fc1-48c8-866b-4b9651ebc9e1.gif)
-# Instyallation
+
+# Installation
 ### Step 1 - Clone the Project
 
 ### Step 2 - Install everything in requirements.txt using the following command:
