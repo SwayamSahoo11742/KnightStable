@@ -11,6 +11,96 @@ Link: https://f382-108-7-187-149.ngrok.io
 <br>
 
 ![ks](https://user-images.githubusercontent.com/117121187/210262413-05c97721-5fc1-48c8-866b-4b9651ebc9e1.gif)
+# Instyallation
+### Step 1 - Clone the Project
+
+### Step 2 - Install everything in requirements.txt using the following command:
+```
+pip install -r requirements.txt
+```
+
+### Step 3 - Setting up the databases.
+
+Because git doesn't allow database share, you will have to do some work. after cloning repo, go into the knightstable folder and run the following command to create a db
+
+```
+sqlite3 games.db
+```
+
+Then copy-paste the following schemas in the sqlite terminal:
+
+```
+CREATE TABLE games (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            site TEXT,
+            white TEXT,
+            black TEXT,
+            result TEXT,
+            white_elo INTEGER,
+            black_elo INTEGER,
+            moves TEXT
+        , opening TEXT);
+```
+
+```
+CREATE TABLE opening (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+color TEXT,
+win_rate NUMERIC,
+draw_rate NUMERIC,
+loss_rate NUMERIC,
+moves TEXT);
+```
+
+```
+CREATE TABLE users
+   (
+   id integer PRIMARY KEY autoincrement,
+   username text NOT NULL,
+   hash numeric NOT NULL,
+   email NUMERIC NOT NULL,
+   rating INTEGER NOT NULL DEFAULT 100,
+   pfp TEXT NOT NULL DEFAULT "logo.jpg",
+   about TEXT DEFAULT "I'm Cool",
+   uscf INTEGER);
+```
+
+```
+CREATE TABLE ksgame (
+   game_id  INTEGER PRIMARY KEY AUTOINCREMENT,
+   site   NUMERIC,
+   black TEXT,
+   white TEXT,
+   status TEXT,
+   pgn TEXT,
+   time TEXT,
+   rated TEXT,
+   white_rating INTEGER,
+   black_rating INTEGER,
+   result NUMERIC,
+   datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+```
+
+NOTE: **The openings and games databases will be empty at this stage and unfortunately, the games database cannot be filled, however if you want the opening database, simply run `web_scraper.py` in staticHelpers
+
+### Step 4 - setting authtoken with ngrok
+
+Create an ngrok account at this [link](https://ngrok.com/) and go to their [dashboard](https://dashboard.ngrok.com/get-started/setup) to follow instructions on how to set up an authtoken
+
+
+### Step 5 - Running the website
+
+After setting up your authtoken, to run the website, open the knightstable terminal and run the following commands:
+```
+set FLASK_APP=__init__.py
+```
+```
+flask run
+```
+it should be running in port 5000, so now you can open cmd as an administrator and run `ngrok http 5000` and the link to your website will be in the ngrok terminal. You do not have to use the randomly generated link by ngrok, you can use a domain name, but for that you will need to buy ngrok premiun which is quite expensive.
+
+NOTE: You will have to do this step each time you reset your server.
 
 # Features
 - ### Look at the games of others
