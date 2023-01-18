@@ -99,7 +99,7 @@ set FLASK_APP=__init__.py
 ```
 flask run
 ```
-it should be running in port 5000, so now you can open cmd as an administrator and run `ngrok http 5000` and the link to your website will be in the ngrok terminal. You do not have to use the randomly generated link by ngrok, you can use a domain name, but for that you will need to buy ngrok premiun which is quite expensive.
+It should be running in port 5000, so now you can open cmd as an administrator and run `ngrok http 5000` and the link to your website will be in the ngrok terminal. You do not have to use the randomly generated link by ngrok, you can use a domain name, but for that you will need to buy ngrok premiun which is quite expensive.
 
 NOTE: You will have to do this step each time you reset your server.
 
