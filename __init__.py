@@ -10,7 +10,7 @@ app = Flask(__name__)
 # App Config
 app.config.from_object(Config)
 Session(app)
-db = "C:/Users/Dodo/Desktop/Projects/games.db"
+db = "games.db"
 
 # Adding custom functions
 app.jinja_env.globals.update(strip_eval=strip_eval)
