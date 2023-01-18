@@ -14,7 +14,10 @@ Link: https://f382-108-7-187-149.ngrok.io
 
 # Installation
 ### Step 1 - Clone the Project
-
+Run the following command
+```
+git clone https://github.com/SwayamSahoo11742/KnightStable.git
+```
 ### Step 2 - Install everything in requirements.txt using the following command:
 ```
 pip install -r requirements.txt
