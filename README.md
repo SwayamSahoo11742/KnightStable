@@ -19,7 +19,7 @@ Run the following command
 git clone https://github.com/SwayamSahoo11742/KnightStable.git
 ```
 ### Step 2 - Install everything in requirements.txt using the following command:
-**Make sure you are in knightstable folder**
+****Make sure you are in knightstable folder**
 ```
 pip install -r requirements.txt
 ```
