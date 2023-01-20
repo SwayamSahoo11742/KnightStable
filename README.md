@@ -13,6 +13,7 @@ Link: https://f382-108-7-187-149.ngrok.io
 ![ks](https://user-images.githubusercontent.com/117121187/210262413-05c97721-5fc1-48c8-866b-4b9651ebc9e1.gif)
 
 # Installation
+**NOTE: ** Installation process is being fixed right now, installing will not work for a while (estimated 24 hours)
 ### Step 1 - Clone the Project
 Run the following command
 ```
