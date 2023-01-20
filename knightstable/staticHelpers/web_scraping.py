@@ -5,7 +5,7 @@ import sqlite3
 from selenium.webdriver.common.by import By
 
 # Connecting to Database
-db = sqlite3.connect("games.db")
+db = sqlite3.connect("knightstable/games.db")
 
 # Using selenium to update JS
 driver = webdriver.Chrome()
