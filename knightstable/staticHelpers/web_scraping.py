@@ -3,9 +3,10 @@ import time
 from bs4 import BeautifulSoup
 import sqlite3
 from selenium.webdriver.common.by import By
-
+import os
 # Connecting to Database
-db = sqlite3.connect("knightstable/games.db")
+path = os.path.abspath("games.db").replace("staticHelpers\\", "")
+db = sqlite3.connect(path)
 
 # Using selenium to update JS
 driver = webdriver.Chrome()
@@ -68,7 +69,7 @@ for i in range(2, 41):
             # Appending dict to master dict
             opening_dict.append(data)
         except:
-            print("nope")
+            pass
 
     # Getting sql cursor
     cursor = db.cursor()

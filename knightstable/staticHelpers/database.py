@@ -1,31 +1,14 @@
 import sqlite3
-import chess
-import chess.pgn
-import time
+import os
+path = os.path.abspath("games.db").replace("staticHelpers\\", "")
 
-startTime = time.time()
-games = open("games.pgn")
-for i in range(102731):
-    game = chess.pgn.read_game(games)
-
-    connect = sqlite3.connect("games.db")
-    cursor = connect.cursor()
-
-    site = game.headers["Site"]
-    white = game.headers["White"]
-    black = game.headers["Black"]
-    result = game.headers["Result"]
-    whiteelo = game.headers["WhiteElo"]
-    blackelo = game.headers["BlackElo"]
-    moves = str(game.mainline_moves())
-    opening = game.headers["Opening"]
-
-    query = "INSERT INTO games (site, white, black, result, white_elo, black_elo, moves, opening) VALUES (?,?,?,?,?,?,?,?)"
-    data_tuple = (site, white, black, result, whiteelo, blackelo, moves, opening)
-
-    cursor.execute(query, data_tuple)
-    connect.commit()
-    cursor.close()
-
-executionTime = time.time() - startTime
-print("Execution time in seconds: " + str(executionTime))
+try:
+    database = sqlite3.connect(path)
+    db = database.cursor()
+    db.execute("CREATE TABLE games ( id INTEGER PRIMARY KEY AUTOINCREMENT, site TEXT, white TEXT, black TEXT, result TEXT, white_elo INTEGER, black_elo INTEGER, moves TEXT , opening TEXT);")
+    db.execute("CREATE TABLE opening ( id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, color TEXT, win_rate NUMERIC, draw_rate NUMERIC, loss_rate NUMERIC, moves TEXT);")
+    db.execute("CREATE TABLE ksgame ( game_id  INTEGER PRIMARY KEY AUTOINCREMENT, site   NUMERIC, black TEXT, white TEXT, status TEXT, pgn TEXT, time TEXT, rated TEXT, white_rating INTEGER, black_rating INTEGER, result NUMERIC, datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP);")
+    db.execute("CREATE TABLE users ( id integer PRIMARY KEY autoincrement, username text NOT NULL, hash numeric NOT NULL, email NUMERIC NOT NULL, rating INTEGER NOT NULL DEFAULT 100, pfp TEXT NOT NULL DEFAULT \"logo.jpg\", about TEXT DEFAULT \"I'm Cool\", uscf INTEGER);")
+    db.close()
+except Exception as e:
+    print(e)
