@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 Run `database.py` in the staticHelpers directory to create the databases:
 ```
-python databse.py
+python database.py
 ```
 ****The openings and games databases will be empty at this stage and unfortunately, the games database cannot be filled, however if you want the opening database, simply run `web_scraper.py` in staticHelpers**
 
