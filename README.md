@@ -13,7 +13,6 @@ Link: https://f382-108-7-187-149.ngrok.io
 ![ks](https://user-images.githubusercontent.com/117121187/210262413-05c97721-5fc1-48c8-866b-4b9651ebc9e1.gif)
 
 # Installation
-**NOTE: ** Installation process is being fixed right now, installing will not work for a while (estimated 24 hours)
 ### Step 1 - Clone the Project
 Run the following command
 ```
@@ -31,7 +30,7 @@ Run `database.py` in the staticHelpers directory to create the databases:
 ```
 python databse.py
 ```
-NOTE: **The openings and games databases will be empty at this stage and unfortunately, the games database cannot be filled, however if you want the opening database, simply run `web_scraper.py` in staticHelpers
+****The openings and games databases will be empty at this stage and unfortunately, the games database cannot be filled, however if you want the opening database, simply run `web_scraper.py` in staticHelpers**
 
 ### Step 4 - setting authtoken with ngrok
 
@@ -49,7 +48,7 @@ flask run
 ```
 It should be running in port 5000, so now you can open cmd as an administrator and run `ngrok http 5000` and the link to your website will be in the ngrok terminal. You do not have to use the randomly generated link by ngrok, you can use a domain name, but for that you will need to buy ngrok premiun which is quite expensive.
 
-NOTE: You will have to do this step each time you reset your server.
+****You will have to do this step each time you reset your server.**
 
 # Features
 - ### Look at the games of others
