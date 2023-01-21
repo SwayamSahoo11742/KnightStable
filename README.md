@@ -27,67 +27,10 @@ pip install -r requirements.txt
 
 ### Step 3 - Setting up the databases.
 
-Because git doesn't allow database share, you will have to do some work. after cloning repo, go into the knightstable folder and run the following command to create a db
-
+Run `database.py` in the staticHelpers directory to create the databases:
 ```
-sqlite3 games.db
+python databse.py
 ```
-
-Then copy-paste the following schemas in the sqlite terminal:
-
-```
-CREATE TABLE games (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            site TEXT,
-            white TEXT,
-            black TEXT,
-            result TEXT,
-            white_elo INTEGER,
-            black_elo INTEGER,
-            moves TEXT
-        , opening TEXT);
-```
-
-```
-CREATE TABLE opening (
-id INTEGER PRIMARY KEY AUTOINCREMENT,
-name TEXT,
-color TEXT,
-win_rate NUMERIC,
-draw_rate NUMERIC,
-loss_rate NUMERIC,
-moves TEXT);
-```
-
-```
-CREATE TABLE users
-   (
-   id integer PRIMARY KEY autoincrement,
-   username text NOT NULL,
-   hash numeric NOT NULL,
-   email NUMERIC NOT NULL,
-   rating INTEGER NOT NULL DEFAULT 100,
-   pfp TEXT NOT NULL DEFAULT "logo.jpg",
-   about TEXT DEFAULT "I'm Cool",
-   uscf INTEGER);
-```
-
-```
-CREATE TABLE ksgame (
-   game_id  INTEGER PRIMARY KEY AUTOINCREMENT,
-   site   NUMERIC,
-   black TEXT,
-   white TEXT,
-   status TEXT,
-   pgn TEXT,
-   time TEXT,
-   rated TEXT,
-   white_rating INTEGER,
-   black_rating INTEGER,
-   result NUMERIC,
-   datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
-```
-
 NOTE: **The openings and games databases will be empty at this stage and unfortunately, the games database cannot be filled, however if you want the opening database, simply run `web_scraper.py` in staticHelpers
 
 ### Step 4 - setting authtoken with ngrok
