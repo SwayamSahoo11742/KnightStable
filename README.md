@@ -4,7 +4,7 @@
 KnightStable is a chess website where users can look at previous games, openings, recent news as well as play against others
 
 
-Link: https://764f-108-7-187-149.ngrok.io      
+Link: https://6797-108-7-187-149.ngrok.io      
 
 **note: This site's url changes every ~24-48hrs and this website is NOT meant to be used on a small device such as a phone. For more info, check the Notes section**
 <br>
