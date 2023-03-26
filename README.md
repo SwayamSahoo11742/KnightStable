@@ -4,13 +4,16 @@
 KnightStable is a chess website where users can look at previous games, openings, recent news as well as play against others
 
 
-Link: https://93f1-108-7-187-149.ngrok.io    
+### Link: https://93f1-108-7-187-149.ngrok.io    
 
 **note: This site's url changes every ~24-48hrs and this website is NOT meant to be used on a small device such as a phone. For more info, check the Notes section**
 <br>
 <br>
 
 ![ks](https://user-images.githubusercontent.com/117121187/210262413-05c97721-5fc1-48c8-866b-4b9651ebc9e1.gif)
+
+# Current Bugs
+- Bug where it creates ghost games. Found: 3/22/23. This bug sometimes pairs you in a game with no opponent
 
 # Installation
 ### Step 1 - Clone the Project
